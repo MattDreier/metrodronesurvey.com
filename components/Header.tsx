@@ -54,8 +54,8 @@ const Header: React.FC = () => {
           <div className="flex items-center z-50 relative">
             <img
               src={logoImage}
-              alt="Sanchez Legacy Roofing"
-              className="h-28 w-auto dark:invert transition-all"
+              alt="MetroDroneSurvey"
+              className="h-28 w-auto transition-all"
             />
           </div>
 
@@ -75,7 +75,7 @@ const Header: React.FC = () => {
             </button>
 
             <a
-              href="https://www.instagram.com"
+              href="https://www.instagram.com/metrodronesurvey"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:opacity-80 transition-opacity"
@@ -103,7 +103,7 @@ const Header: React.FC = () => {
               )}
             </button>
             <a
-              href="https://www.instagram.com"
+              href="https://www.instagram.com/metrodronesurvey"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:opacity-80 transition-opacity"
