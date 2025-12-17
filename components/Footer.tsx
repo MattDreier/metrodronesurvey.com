@@ -10,10 +10,10 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="font-display font-medium text-text-primary-light dark:text-text-primary-dark mb-4 text-base">Services</h3>
             <ul className="space-y-3 text-sm text-text-secondary-light dark:text-text-secondary-dark">
-              <li><a href="#services" className="hover:text-brand-gold transition-colors">Residential Roofing</a></li>
-              <li><a href="#services" className="hover:text-brand-gold transition-colors">Residential Gutters</a></li>
-              <li><a href="#services" className="hover:text-brand-gold transition-colors">Residential Solar</a></li>
-              <li><a href="#services" className="hover:text-brand-gold transition-colors">Free Inspections</a></li>
+              <li><a href="#services" className="hover:text-brand-teal transition-colors">Aerial Photography & Video</a></li>
+              <li><a href="#services" className="hover:text-brand-teal transition-colors">3D Modeling</a></li>
+              <li><a href="#services" className="hover:text-brand-teal transition-colors">Solar Site Analysis</a></li>
+              <li><a href="#services" className="hover:text-brand-teal transition-colors">Property Documentation</a></li>
             </ul>
           </div>
 
@@ -21,17 +21,19 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="font-display font-medium text-text-primary-light dark:text-text-primary-dark mb-4 text-base">Company</h3>
             <ul className="space-y-3 text-sm text-text-secondary-light dark:text-text-secondary-dark">
-              <li><a href="#why-choose-us" className="hover:text-brand-gold transition-colors">Why Choose Us</a></li>
-              <li><a href="#reviews" className="hover:text-brand-gold transition-colors">Reviews</a></li>
+              <li><a href="#why-choose-us" className="hover:text-brand-teal transition-colors">About MetroDroneSurvey</a></li>
+              <li><a href="#services" className="hover:text-brand-teal transition-colors">Service Areas</a></li>
+              <li><a href="mailto:desmond@metrodronesurvey.com" className="hover:text-brand-teal transition-colors">Contact Us</a></li>
             </ul>
           </div>
 
           {/* Column 3 */}
           <div>
-            <h3 className="font-display font-medium text-text-primary-light dark:text-text-primary-dark mb-4 text-base">Legal</h3>
+            <h3 className="font-display font-medium text-text-primary-light dark:text-text-primary-dark mb-4 text-base">Contact</h3>
             <ul className="space-y-3 text-sm text-text-secondary-light dark:text-text-secondary-dark">
-              <li><a href="/terms" className="hover:text-brand-gold transition-colors">Terms & Conditions</a></li>
-              <li><a href="/privacy" className="hover:text-brand-gold transition-colors">Privacy Policy</a></li>
+              <li><a href="mailto:desmond@metrodronesurvey.com" className="hover:text-brand-teal transition-colors">desmond@metrodronesurvey.com</a></li>
+              <li><a href="tel:+18167192540" className="hover:text-brand-teal transition-colors">(816) 719-2540</a></li>
+              <li className="text-text-secondary-light dark:text-text-secondary-dark">Kansas City Metro Area</li>
             </ul>
           </div>
 
@@ -39,15 +41,13 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="font-display font-medium text-text-primary-light dark:text-text-primary-dark mb-4 text-base">Follow Us</h3>
             <div className="flex flex-col space-y-3 text-sm text-text-secondary-light dark:text-text-secondary-dark">
-              <a href="https://www.facebook.com/sanchezlegacyroofing" target="_blank" rel="noopener noreferrer" className="hover:text-brand-gold transition-colors flex items-center gap-2">Facebook</a>
-              <a href="https://www.instagram.com/sanchezlegacyroofing" target="_blank" rel="noopener noreferrer" className="hover:text-brand-gold transition-colors flex items-center gap-2">Instagram</a>
-              <a href="https://www.linkedin.com/company/sanchezlegacyroofing" target="_blank" rel="noopener noreferrer" className="hover:text-brand-gold transition-colors flex items-center gap-2">LinkedIn</a>
+              <a href="https://www.instagram.com/metrodronesurvey" target="_blank" rel="noopener noreferrer" className="hover:text-brand-teal transition-colors flex items-center gap-2">Instagram</a>
             </div>
           </div>
         </div>
 
         <div className="text-center text-xs pt-8 border-t border-gray-100 dark:border-gray-800 text-text-secondary-light dark:text-text-secondary-dark">
-          <p>© 2025 Sanchez Legacy Roofing. All Rights Reserved.</p>
+          <p>© 2025 MetroDroneSurvey. All Rights Reserved.</p>
         </div>
       </div>
     </footer>

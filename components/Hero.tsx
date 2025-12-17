@@ -1,33 +1,33 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ArrowRight, CheckCircle2, Shield, FileCheck, Award } from 'lucide-react';
+import { ArrowRight, Camera, Box, Sun, Zap } from 'lucide-react';
 
-const heroImage = '/assets/optimized/Free damage inspections.webp';
+const heroImage = '/assets/optimized/Hero Drone Shot.webp';
 
 const offers = [
   {
-    icon: CheckCircle2,
-    color: 'primary-green',
-    title: 'Free Storm Damage Inspections',
-    description: "We'll assess hail and wind damage at no cost."
+    icon: Camera,
+    color: 'primary',
+    title: 'Aerial Photography & Video',
+    description: 'High-resolution interior and exterior shots showcasing every detail'
   },
   {
-    icon: FileCheck,
-    color: 'primary-blue',
-    title: 'Insurance Claim Help',
-    description: 'We handle the paperwork and work with your insurance.'
+    icon: Box,
+    color: 'primary',
+    title: '3D Modeling & Mapping',
+    description: 'Accurate dimensional data for planning and documentation'
   },
   {
-    icon: Shield,
-    color: 'primary-yellow',
-    title: 'Impact-Resistant Materials',
-    description: 'Built to withstand Oklahoma\'s severe weather.'
+    icon: Sun,
+    color: 'warning',
+    title: 'Solar Site Analysis',
+    description: 'Comprehensive roof and parapet assessments for solar installations'
   },
   {
-    icon: Award,
-    color: 'primary-green',
-    title: 'Quality Workmanship Guaranteed',
-    description: 'Family-owned with a warranty you can count on.'
+    icon: Zap,
+    color: 'warning',
+    title: 'Fast Turnaround',
+    description: 'Same-day delivery available for urgent project needs'
   }
 ];
 
@@ -53,32 +53,28 @@ const Hero: React.FC = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.15] tracking-tight text-text-primary-light dark:text-text-primary-dark">
-            We'll Take Care of Everything After the Storm
+            Distinctive Aerial Imagery for Your Projects
           </h1>
           <p className="text-lg leading-relaxed text-text-secondary-light dark:text-text-secondary-dark max-w-xl">
-            Free damage inspections. Insurance claim help. Quality repairs with impact-resistant materials. As a family-owned company serving Oklahoma City, we've helped thousands of homeowners protect their biggest investment.
+            Licensed and insured drone photography for real estate, solar, construction, and beyond. Serving the Kansas City Metro with professional 4K aerial imagery, 3D modeling, and rapid turnaround for your project needs.
           </p>
           
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mt-4">
             <motion.a
-              href="https://form.typeform.com/to/oSSbtMUM?typeform-source=sanchez-legacy-roofing.webflow.io"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full sm:w-auto px-8 py-3.5 bg-brand-gold text-text-primary-light text-base font-bold rounded-full shadow-md hover:shadow-lg hover:bg-brand-gold/90 transition-all text-center"
+              href="mailto:desmond@metrodronesurvey.com?subject=Project%20Quote%20Request"
+              className="w-full sm:w-auto px-8 py-3.5 bg-brand-teal text-white text-base font-bold rounded-full shadow-md hover:shadow-lg hover:bg-brand-teal-light transition-all text-center"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              Get a Quote
+              Request a Quote
             </motion.a>
 
             <motion.a
-              href="https://calendar.app.google/omLYhDe3wkFxDJvM8"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 text-brand-gold-dark dark:text-brand-gold font-semibold px-4 py-3 group hover:text-brand-gold transition-colors"
+              href="tel:+18167192540"
+              className="flex items-center gap-2 text-brand-teal dark:text-brand-lime font-semibold px-4 py-3 group hover:text-brand-lime transition-colors"
               whileHover={{ x: 5 }}
             >
-              Schedule a Free Inspection
+              Call (816) 719-2540
               <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
             </motion.a>
           </div>

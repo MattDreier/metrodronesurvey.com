@@ -4,16 +4,16 @@ import { Star } from 'lucide-react';
 
 const testimonials = [
   {
-    quote: "After last spring's hail storm, I didn't know where to start. Sanchez Legacy took care of everything—the inspection, working with my insurance, and the installation. The new roof looks great and I had zero stress.",
-    author: "Jennifer M., Edmond"
+    quote: "I hired Desmond to survey the property for my wife and I. We needed accurate measurements for landscaping projects. The aerial imagery helped us visualize our plans perfectly.",
+    author: "Matt Dreier, Homeowner"
   },
   {
-    quote: "These guys showed up on time, did quality work, and didn't try to upsell me. They recommended impact-resistant shingles and explained why. My insurance premium even went down a bit. Can't ask for more than that.",
-    author: "Robert T., Moore"
+    quote: "Desmond provided detailed imagery of roof and parapet damage that helped us assess structural issues before solar installation. Professional service and fast turnaround.",
+    author: "Adam Houp, Shockwave Solar"
   },
   {
-    quote: "We had them install solar panels when we replaced our roof. They handled all the coordination and permits. Our electric bill is way lower now, and the whole process was easier than I expected.",
-    author: "Sarah & Mike K., OKC"
+    quote: "We needed assistance with solar project documentation. Desmond delivered comprehensive aerial analysis that exceeded our expectations and kept our project on schedule.",
+    author: "Charlotte Hoverder, SP Plating"
   }
 ];
 
@@ -27,7 +27,7 @@ const Testimonials: React.FC = () => {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
         >
-          What Our Customers Say
+          Client Testimonials
         </motion.h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -42,7 +42,7 @@ const Testimonials: React.FC = () => {
             >
               <div className="flex items-center gap-1">
                 {[...Array(5)].map((_, idx) => (
-                  <Star key={idx} className="w-5 h-5 fill-primary-yellow text-primary-yellow" />
+                  <Star key={idx} className="w-5 h-5 fill-warning text-warning" />
                 ))}
               </div>
               <blockquote className="text-base font-normal leading-relaxed text-text-primary-light dark:text-text-primary-dark flex-grow">

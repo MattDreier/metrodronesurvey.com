@@ -36,8 +36,8 @@ async function optimizeImages() {
     const inputPath = join(ASSETS_DIR, file);
     const { name } = parse(file);
 
-    // Special handling: Rename "Sanchez (2).png" to "logo.png"
-    const outputName = file === 'Sanchez (2).png' ? 'logo' : name;
+    // Special handling: Rename "MDS Logo.png" to "logo.png"
+    const outputName = file === 'MDS Logo.png' ? 'logo' : name;
     const outputPath = join(OPTIMIZED_DIR, `${outputName}.webp`);
 
     try {

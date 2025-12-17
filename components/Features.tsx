@@ -1,25 +1,25 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Camera, Leaf, ShieldCheck } from 'lucide-react';
+import { Camera, Zap, ShieldCheck } from 'lucide-react';
 
 const features = [
   {
-    icon: <Camera className="w-7 h-7 text-primary-blue" />,
-    bg: "bg-primary-blue/10",
-    title: "Thorough Inspections",
-    desc: "We document every detail of storm damage with photos and detailed reports. This helps ensure your insurance claim is accurate and you get the coverage you deserve."
+    icon: <Camera className="w-7 h-7 text-brand-teal" />,
+    bg: "bg-brand-teal/10",
+    title: "Professional Equipment",
+    desc: "We use commercial-grade drones to capture stunning 4K aerial photography and video, providing perspectives impossible from the ground."
   },
   {
-    icon: <Leaf className="w-7 h-7 text-primary-green" />,
-    bg: "bg-primary-green/10",
-    title: "Quality Materials",
-    desc: "We install impact-resistant shingles rated for Oklahoma's severe weather. These materials are designed to handle high winds and hail, helping protect your biggest investment."
+    icon: <Zap className="w-7 h-7 text-warning" />,
+    bg: "bg-warning/10",
+    title: "Fast & Flexible",
+    desc: "We can do that! From real estate listings to solar inspections, sports events to artistic concepts—we adapt to your unique project needs."
   },
   {
-    icon: <ShieldCheck className="w-7 h-7 text-primary-yellow" />,
-    bg: "bg-primary-yellow/10",
-    title: "Local & Reliable",
-    desc: "We're based right here in Oklahoma City. Our workmanship warranty is backed by a local team you can actually reach when you need us."
+    icon: <ShieldCheck className="w-7 h-7 text-brand-teal" />,
+    bg: "bg-brand-teal/10",
+    title: "Licensed & Insured",
+    desc: "Based in the Kansas City Metro, we're fully licensed FAA drone pilots with comprehensive insurance for your peace of mind."
   }
 ];
 
@@ -54,11 +54,8 @@ const Features: React.FC = () => {
           className="flex flex-col gap-4 items-center"
         >
           <h2 className="font-display tracking-tight text-3xl md:text-4xl font-bold leading-tight max-w-2xl text-text-primary-light dark:text-text-primary-dark">
-            Why Choose Sanchez Legacy Roofing
+            Why Choose MetroDroneSurvey?
           </h2>
-          <p className="text-lg leading-relaxed text-text-secondary-light dark:text-text-secondary-dark max-w-3xl">
-            We're a local, family-owned company that's been serving Oklahoma City homeowners for years. When you work with us, you get honest assessments, quality materials, and a team that stands behind every job.
-          </p>
         </motion.div>
 
         <motion.div 

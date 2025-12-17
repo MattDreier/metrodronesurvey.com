@@ -1,28 +1,25 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-const roofingImage = '/assets/optimized/Residential Roofing.webp';
-const guttersImage = '/assets/optimized/Residential Gutters.webp';
-const solarImage = '/assets/optimized/Residential Solar.webp';
+const realEstateImage = '/assets/optimized/Real Estate 3D.webp';
+const servicesImage = '/assets/optimized/Services Header.webp';
+const sportsImage = '/assets/optimized/Sports Aerial.webp';
 
 const services = [
   {
-    title: "Residential Roofing",
-    desc: "New roof installations, storm damage repairs, and replacements. We use impact-resistant materials built to handle Oklahoma weather and work directly with your insurance company.",
-    // Image: A clean shot of a pristine roof against a blue sky, emphasizing texture and quality.
-    image: roofingImage
+    title: "Real Estate & Property",
+    desc: "Showcase properties with stunning aerial photography and video. Perfect for listings, land surveys, and property documentation.",
+    image: realEstateImage
   },
   {
-    title: "Residential Gutters",
-    desc: "Seamless gutter installation and repair to protect your foundation from water damage. Properly installed gutters prevent costly foundation issues down the road.",
-    // Image: Clean, professional gutter installation on a residential home.
-    image: guttersImage
+    title: "Solar & Roofing Analysis",
+    desc: "Detailed roof inspections, parapet damage assessments, and solar site analysis. Help your clients make informed decisions.",
+    image: servicesImage
   },
   {
-    title: "Residential Solar",
-    desc: "Solar panel installation that integrates seamlessly with your roof. Lower your energy bills while increasing your home's value with clean, renewable energy.",
-    // Image: Clear, modern solar panels installed on a residential roof.
-    image: solarImage
+    title: "Sports & Custom Projects",
+    desc: "Action-packed sports footage, artistic aerial concepts, and unique creative projects. We adapt to your vision.",
+    image: sportsImage
   }
 ];
 
@@ -36,7 +33,7 @@ const Services: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          Complete Home Protection
+          What We Capture
         </motion.h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -57,7 +54,7 @@ const Services: React.FC = () => {
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
               </div>
               <div className="flex flex-col gap-2 px-1">
-                <h3 className="font-display text-xl font-medium leading-normal text-text-primary-light dark:text-text-primary-dark group-hover:text-brand-gold transition-colors">
+                <h3 className="font-display text-xl font-medium leading-normal text-text-primary-light dark:text-text-primary-dark group-hover:text-brand-teal transition-colors">
                   {service.title}
                 </h3>
                 <p className="text-text-secondary-light dark:text-text-secondary-dark text-sm font-normal leading-relaxed">

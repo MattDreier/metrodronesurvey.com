@@ -16,34 +16,30 @@ const CallToAction: React.FC = () => {
           {/* Headline */}
           <div className="max-w-2xl">
             <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-text-primary-light dark:text-text-primary-dark mb-4">
-              Let's Get Started.
+              Ready to Elevate Your Project?
             </h2>
             <p className="text-lg text-text-secondary-light dark:text-text-secondary-dark">
-              Request your quote for pricing details, or schedule a free inspection and we'll guide you through every step.
+              Contact us today for project pricing, availability, or to discuss your unique aerial photography needs.
             </p>
           </div>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center gap-4 mt-4">
             <motion.a
-              href="https://form.typeform.com/to/oSSbtMUM?typeform-source=sanchez-legacy-roofing.webflow.io"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full sm:w-auto px-8 py-3.5 bg-brand-gold text-text-primary-light text-base font-bold rounded-full shadow-md hover:shadow-lg hover:bg-brand-gold/90 transition-all text-center"
+              href="mailto:desmond@metrodronesurvey.com?subject=Project%20Inquiry"
+              className="w-full sm:w-auto px-8 py-3.5 bg-brand-teal text-white text-base font-bold rounded-full shadow-md hover:shadow-lg hover:bg-brand-teal-light transition-all text-center"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              Get a Quote
+              Email Us
             </motion.a>
 
             <motion.a
-              href="https://calendar.app.google/omLYhDe3wkFxDJvM8"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 text-brand-gold-dark dark:text-brand-gold font-semibold px-4 py-3 group hover:text-brand-gold transition-colors"
+              href="tel:+18167192540"
+              className="flex items-center gap-2 text-brand-teal hover:text-brand-lime font-semibold px-4 py-3 group transition-colors"
               whileHover={{ x: 5 }}
             >
-              Schedule a Free Inspection
+              Call (816) 719-2540
               <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
             </motion.a>
           </div>

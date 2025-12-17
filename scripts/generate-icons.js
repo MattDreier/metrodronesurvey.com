@@ -7,7 +7,7 @@ import { dirname } from 'path';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-const LOGO_PATH = join(__dirname, '../public/assets/Sanchez (2).png');
+const LOGO_PATH = join(__dirname, '../public/assets/MDS Logo.png');
 const PUBLIC_DIR = join(__dirname, '../public');
 
 // Icon sizes to generate
@@ -57,8 +57,8 @@ async function generateIcons() {
 
   // Generate PWA manifest
   const manifest = {
-    name: "Sanchez Legacy Roofing",
-    short_name: "SLR",
+    name: "MetroDroneSurvey",
+    short_name: "MDS",
     icons: [
       {
         src: "/favicon-32x32.png",
@@ -71,7 +71,7 @@ async function generateIcons() {
         type: "image/png"
       }
     ],
-    theme_color: "#f4b434",
+    theme_color: "#0f3430",
     background_color: "#ffffff",
     display: "standalone"
   };
