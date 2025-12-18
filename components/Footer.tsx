@@ -21,7 +21,7 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="font-display font-medium text-text-primary-light dark:text-text-primary-dark mb-4 text-base">Company</h3>
             <ul className="space-y-3 text-sm text-text-secondary-light dark:text-text-secondary-dark">
-              <li><a href="#why-choose-us" className="hover:text-brand-teal transition-colors">About MetroDroneSurvey</a></li>
+              <li><a href="#why-choose-us" className="hover:text-brand-teal transition-colors">About Metro Drone Survey</a></li>
               <li><a href="#services" className="hover:text-brand-teal transition-colors">Service Areas</a></li>
               <li><a href="mailto:desmond@metrodronesurvey.com" className="hover:text-brand-teal transition-colors">Contact Us</a></li>
             </ul>
@@ -47,7 +47,7 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="text-center text-xs pt-8 border-t border-gray-100 dark:border-gray-800 text-text-secondary-light dark:text-text-secondary-dark">
-          <p>© 2025 MetroDroneSurvey. All Rights Reserved.</p>
+          <p>© 2025 Metro Drone Survey. All Rights Reserved.</p>
         </div>
       </div>
     </footer>

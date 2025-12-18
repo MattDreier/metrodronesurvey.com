@@ -44,3 +44,12 @@ coverage/
 # Build artifacts
 build/
 .cache/
+
+# Screenshots and design mockups
+screenshots/
+*-dark-mode.png
+*-light-mode.png
+*-hover.png
+desktop-*.png
+tablet-*.png
+mobile-*.png

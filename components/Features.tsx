@@ -1,25 +1,25 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Camera, Zap, ShieldCheck } from 'lucide-react';
+import { Zap, ShieldCheck, FileCheck } from 'lucide-react';
 
 const features = [
   {
-    icon: <Camera className="w-7 h-7 text-brand-teal" />,
-    bg: "bg-brand-teal/10",
-    title: "Professional Equipment",
-    desc: "We use commercial-grade drones to capture stunning 4K aerial photography and video, providing perspectives impossible from the ground."
+    icon: <ShieldCheck className="w-7 h-7 text-primary-blue" />,
+    bg: "bg-primary-blue/10",
+    title: "Safety-First, Always",
+    desc: "I never send you or your crew onto a dangerous roof. Every flight is FAA Part 107 certified with $2M liability coverage. You get complete aerial documentation while your team stays safely on the ground."
   },
   {
-    icon: <Zap className="w-7 h-7 text-warning" />,
-    bg: "bg-warning/10",
-    title: "Fast & Flexible",
-    desc: "We can do that! From real estate listings to solar inspections, sports events to artistic concepts—we adapt to your unique project needs."
+    icon: <FileCheck className="w-7 h-7 text-primary-green" />,
+    bg: "bg-primary-green/10",
+    title: "Documentation That Meets Their Standards",
+    desc: "Insurance adjusters, solar financiers, municipal inspectors—they all have strict requirements. I know exactly what they're looking for: geotagged imagery, accurate measurements, detailed reports. You get documentation that passes on the first submission."
   },
   {
-    icon: <ShieldCheck className="w-7 h-7 text-brand-teal" />,
-    bg: "bg-brand-teal/10",
-    title: "Licensed & Insured",
-    desc: "Based in the Kansas City Metro, we're fully licensed FAA drone pilots with comprehensive insurance for your peace of mind."
+    icon: <Zap className="w-7 h-7 text-primary-yellow" />,
+    bg: "bg-primary-yellow/10",
+    title: "Fast Turnaround, Zero Delays",
+    desc: "Contractor deadlines don't wait, and neither do I. Most projects are surveyed within 24 hours, with deliverables same-day or next morning. Need it for tomorrow's meeting? I've got you covered."
   }
 ];
 
@@ -46,7 +46,7 @@ const Features: React.FC = () => {
   return (
     <section id="why-choose-us" className="py-20 px-4 md:px-10 bg-white dark:bg-background-dark transition-colors">
       <div className="max-w-[1200px] mx-auto text-center flex flex-col gap-12">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
@@ -54,8 +54,11 @@ const Features: React.FC = () => {
           className="flex flex-col gap-4 items-center"
         >
           <h2 className="font-display tracking-tight text-3xl md:text-4xl font-bold leading-tight max-w-2xl text-text-primary-light dark:text-text-primary-dark">
-            Why Choose MetroDroneSurvey?
+            How I Can Help
           </h2>
+          <p className="text-lg text-text-secondary-light dark:text-text-secondary-dark max-w-2xl">
+            I'm committed to removing risk and uncertainty from every project—so you can focus on what you do best.
+          </p>
         </motion.div>
 
         <motion.div 

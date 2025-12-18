@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+/* Enable dark mode variant */
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  /* Brand Colors */
+  --color-brand-teal: #0f3430;
+  --color-brand-teal-light: #1a4f48;
+  --color-brand-teal-lighter: #2d7a6e;
+  --color-brand-teal-dark: #0a2320;
+  --color-brand-lime: #e4ea6b;
+  --color-brand-lime-bright: #fff86b;
+  --color-brand-lime-dark: #c5cc4e;
+
+  /* Semantic Colors */
+  --color-primary: #0f3430;
+  --color-success: #34A853;
+  --color-warning: #e4ea6b;
+  --color-danger: #EA4335;
+
+  /* Light Theme Colors */
+  --color-background-light: #FFFFFF;
+  --color-surface-light: #F8F9FA;
+  --color-text-primary-light: #202124;
+  --color-text-secondary-light: #5F6368;
+
+  /* Dark Theme Colors */
+  --color-background-dark: #202124;
+  --color-surface-dark: #303134;
+  --color-text-primary-dark: #E8EAED;
+  --color-text-secondary-dark: #9AA0A6;
+
+  /* Vibrant Icon Colors (consistent across light/dark modes) */
+  --color-primary-blue: #1A73E8;
+  --color-primary-green: #34A853;
+  --color-primary-yellow: #F4B434;
+
+  /* Font Families */
+  --font-display: Poppins, Arial, sans-serif;
+  --font-body: Arial, Helvetica, sans-serif;
+
+  /* Shadows */
+  --shadow-soft: 0 2px 12px rgba(15, 52, 48, 0.08);
+  --shadow-hover: 0 4px 20px rgba(15, 52, 48, 0.12);
+}

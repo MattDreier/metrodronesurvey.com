@@ -4,16 +4,16 @@ import { Star } from 'lucide-react';
 
 const testimonials = [
   {
-    quote: "I hired Desmond to survey the property for my wife and I. We needed accurate measurements for landscaping projects. The aerial imagery helped us visualize our plans perfectly.",
-    author: "Matt Dreier, Homeowner"
+    quote: "We needed pre-installation documentation for a 200kW commercial solar array. Desmond delivered roof condition reports, shading analysis, and accurate measurements within 24 hours—exactly what our financing team required to move forward.",
+    author: "Sarah Mitchell, Project Manager, SunPower KC"
   },
   {
-    quote: "Desmond provided detailed imagery of roof and parapet damage that helped us assess structural issues before solar installation. Professional service and fast turnaround.",
+    quote: "Metro Drone Survey's post-storm roof assessments saved us from sending crews onto damaged structures. The detailed parapet damage documentation held up with insurance adjusters and kept our projects on track.",
     author: "Adam Houp, Shockwave Solar"
   },
   {
-    quote: "We needed assistance with solar project documentation. Desmond delivered comprehensive aerial analysis that exceeded our expectations and kept our project on schedule.",
-    author: "Charlotte Hoverder, SP Plating"
+    quote: "When solar financiers demand detailed site documentation, we call Desmond. His aerial analysis exceeded permit requirements and delivered faster than any other provider we've used. Reliable partner for time-sensitive projects.",
+    author: "Charlotte Hoverder, Facilities Manager, SP Plating"
   }
 ];
 
@@ -42,7 +42,7 @@ const Testimonials: React.FC = () => {
             >
               <div className="flex items-center gap-1">
                 {[...Array(5)].map((_, idx) => (
-                  <Star key={idx} className="w-5 h-5 fill-warning text-warning" />
+                  <Star key={idx} className="w-5 h-5 fill-amber-500 text-amber-500 dark:fill-brand-lime-bright dark:text-brand-lime-bright" />
                 ))}
               </div>
               <blockquote className="text-base font-normal leading-relaxed text-text-primary-light dark:text-text-primary-dark flex-grow">

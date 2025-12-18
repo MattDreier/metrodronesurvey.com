@@ -1,35 +1,46 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ArrowRight, Camera, Box, Sun, Zap } from 'lucide-react';
+import { ArrowRight, Box, Sun, Zap, ShieldCheck } from 'lucide-react';
 
-const heroImage = '/assets/optimized/Hero Drone Shot.webp';
+const heroImage = '/assets/optimized/new-hero.webp';
 
 const offers = [
-  {
-    icon: Camera,
-    color: 'primary',
-    title: 'Aerial Photography & Video',
-    description: 'High-resolution interior and exterior shots showcasing every detail'
-  },
-  {
-    icon: Box,
-    color: 'primary',
-    title: '3D Modeling & Mapping',
-    description: 'Accurate dimensional data for planning and documentation'
-  },
   {
     icon: Sun,
     color: 'warning',
     title: 'Solar Site Analysis',
-    description: 'Comprehensive roof and parapet assessments for solar installations'
+    description: 'Roof condition reports, shading analysis, and accurate measurements delivered within 24 hours'
+  },
+  {
+    icon: ShieldCheck,
+    color: 'primary',
+    title: 'Post-Storm Roof Documentation',
+    description: 'Insurance-grade damage assessments without putting your crew at risk'
+  },
+  {
+    icon: Box,
+    color: 'primary',
+    title: 'Construction Progress Monitoring',
+    description: 'Weekly site documentation for client updates, billing disputes, and project archives'
   },
   {
     icon: Zap,
     color: 'warning',
-    title: 'Fast Turnaround',
-    description: 'Same-day delivery available for urgent project needs'
+    title: '$2M Liability Coverage Included',
+    description: 'Every flight is backed by comprehensive insurance—protecting your business and your clients'
   }
 ];
+
+const colorClasses = {
+  primary: {
+    bg: 'bg-primary-blue/10',
+    icon: 'text-primary-blue'
+  },
+  warning: {
+    bg: 'bg-primary-yellow/10',
+    icon: 'text-primary-yellow'
+  }
+};
 
 const Hero: React.FC = () => {
   const [currentOffer, setCurrentOffer] = useState(0);
@@ -53,20 +64,20 @@ const Hero: React.FC = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.15] tracking-tight text-text-primary-light dark:text-text-primary-dark">
-            Distinctive Aerial Imagery for Your Projects
+            Proceed with Confidence
           </h1>
           <p className="text-lg leading-relaxed text-text-secondary-light dark:text-text-secondary-dark max-w-xl">
-            Licensed and insured drone photography for real estate, solar, construction, and beyond. Serving the Kansas City Metro with professional 4K aerial imagery, 3D modeling, and rapid turnaround for your project needs.
+            I believe you shouldn't have to choose between speed, accuracy, and safety. That's why I deliver insurance-grade aerial documentation in 24 hours—so you get everything you need, without putting anyone on a dangerous roof.
           </p>
           
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mt-4">
             <motion.a
               href="mailto:desmond@metrodronesurvey.com?subject=Project%20Quote%20Request"
-              className="w-full sm:w-auto px-8 py-3.5 bg-brand-teal text-white text-base font-bold rounded-full shadow-md hover:shadow-lg hover:bg-brand-teal-light transition-all text-center"
+              className="w-full sm:w-auto px-8 py-3.5 bg-brand-teal-lighter text-white text-base font-bold rounded-full shadow-md hover:shadow-lg hover:bg-brand-teal-light active:bg-brand-teal transition-all text-center"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              Request a Quote
+              Email Me
             </motion.a>
 
             <motion.a
@@ -74,7 +85,7 @@ const Hero: React.FC = () => {
               className="flex items-center gap-2 text-brand-teal dark:text-brand-lime font-semibold px-4 py-3 group hover:text-brand-lime transition-colors"
               whileHover={{ x: 5 }}
             >
-              Call (816) 719-2540
+              Call Me: (816) 719-2540
               <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
             </motion.a>
           </div>
@@ -104,9 +115,9 @@ const Hero: React.FC = () => {
                 exit={{ opacity: 0, y: -20 }}
                 transition={{ duration: 0.5 }}
               >
-                <div className={`bg-${offers[currentOffer].color}/10 p-2 rounded-full flex-shrink-0`}>
+                <div className={`${colorClasses[offers[currentOffer].color].bg} p-2 rounded-full flex-shrink-0`}>
                   {React.createElement(offers[currentOffer].icon, {
-                    className: `w-8 h-8 text-${offers[currentOffer].color}`
+                    className: `w-8 h-8 ${colorClasses[offers[currentOffer].color].icon}`
                   })}
                 </div>
                 <div className="flex-1 min-w-0">

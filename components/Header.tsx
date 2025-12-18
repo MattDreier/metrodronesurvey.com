@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { motion, useScroll, useMotionValueEvent } from 'framer-motion';
 import { Sun, Moon } from 'lucide-react';
-import logoImage from '/public/assets/MDS Logo.png';
-
-const instagramIcon = '/assets/optimized/Sanchez (4).webp';
+const logoImage = '/assets/optimized/transparent-logo.webp';
+const instagramIcon = '/assets/optimized/IG.webp';
 
 const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -54,8 +53,8 @@ const Header: React.FC = () => {
           <div className="flex items-center z-50 relative">
             <img
               src={logoImage}
-              alt="MetroDroneSurvey"
-              className="h-28 w-auto transition-all"
+              alt="Metro Drone Survey"
+              className="h-28 w-auto transition-all brightness-0 dark:brightness-0 dark:invert"
             />
           </div>
 
@@ -68,9 +67,9 @@ const Header: React.FC = () => {
               aria-label="Toggle dark mode"
             >
               {isDark ? (
-                <Sun className="w-5 h-5 text-text-secondary-light dark:text-text-secondary-dark" />
+                <Sun className="w-5 h-5 text-text-primary-light dark:text-text-primary-dark" />
               ) : (
-                <Moon className="w-5 h-5 text-text-secondary-light dark:text-text-secondary-dark" />
+                <Moon className="w-5 h-5 text-text-primary-light dark:text-text-primary-dark" />
               )}
             </button>
 
@@ -84,7 +83,7 @@ const Header: React.FC = () => {
               <img
                 src={instagramIcon}
                 alt="Instagram"
-                className="h-8 w-8 invert dark:invert-0"
+                className="h-8 w-8 rounded-lg brightness-0 dark:brightness-0 dark:invert"
               />
             </a>
           </div>
@@ -112,7 +111,7 @@ const Header: React.FC = () => {
               <img
                 src={instagramIcon}
                 alt="Instagram"
-                className="h-7 w-7 invert dark:invert-0"
+                className="h-7 w-7 rounded-lg brightness-0 dark:brightness-0 dark:invert"
               />
             </a>
           </div>
