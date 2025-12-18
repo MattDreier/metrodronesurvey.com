@@ -1,11 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-const realEstateImage = '/assets/optimized/Real Estate 3D.webp';
-const servicesImage = '/assets/optimized/Services Header.webp';
-const solarImage = '/assets/optimized/solar-site-survey photo.webp';
-const roofingImage = '/assets/optimized/roofing damage.webp';
-const progressImage = '/assets/optimized/progress.webp';
+const realEstateImage = `${import.meta.env.BASE_URL}assets/optimized/Real Estate 3D.webp`;
+const servicesImage = `${import.meta.env.BASE_URL}assets/optimized/Services Header.webp`;
+const solarImage = `${import.meta.env.BASE_URL}assets/optimized/solar-site-survey photo.webp`;
+const roofingImage = `${import.meta.env.BASE_URL}assets/optimized/roofing damage.webp`;
+const progressImage = `${import.meta.env.BASE_URL}assets/optimized/progress.webp`;
 
 const services = [
   {

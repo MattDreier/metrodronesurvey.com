@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowRight, Box, Sun, Zap, ShieldCheck } from 'lucide-react';
 
-const heroImage = '/assets/optimized/new-hero.webp';
+const heroImage = `${import.meta.env.BASE_URL}assets/optimized/new-hero.webp`;
 
 const offers = [
   {

@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { motion, useScroll, useMotionValueEvent } from 'framer-motion';
 import { Sun, Moon } from 'lucide-react';
-const logoImage = '/assets/optimized/transparent-logo.webp';
-const instagramIcon = '/assets/optimized/IG.webp';
+const logoImage = `${import.meta.env.BASE_URL}assets/optimized/transparent-logo.webp`;
+const instagramIcon = `${import.meta.env.BASE_URL}assets/optimized/IG.webp`;
 
 const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
