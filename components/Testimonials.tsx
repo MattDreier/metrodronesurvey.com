@@ -4,16 +4,16 @@ import { Star } from 'lucide-react';
 
 const testimonials = [
   {
-    quote: "We needed pre-installation documentation for a 200kW commercial solar array. Desmond delivered roof condition reports, shading analysis, and accurate measurements within 24 hours—exactly what our financing team required to move forward.",
-    author: "Sarah Mitchell, Project Manager, SunPower KC"
+    quote: "I brought Desmond in to do a drone survey of my property and honestly, it was super helpful. The aerial photos and video showed me things I just couldn't see from ground level. Plus, the top down shots gave us measurements for a landscaping project. Desmond was easy to work with, and turned it around quick. Definitely recommend him if you need a site survey in the KC area.",
+    author: "Matt Dreier, Homeowner"
   },
   {
-    quote: "Metro Drone Survey's post-storm roof assessments saved us from sending crews onto damaged structures. The detailed parapet damage documentation held up with insurance adjusters and kept our projects on track.",
+    quote: "Desmond was asked to do a drone survey of a roof top and parapet damage on an older building in Kansas City, Missouri. He was super helpful and provided camera pictures, drone pictures, a usb thumb drive and a link to a drop box with downloadable images. Desmond is great to work with and we will use his services in the future. We definitely recommend him if you need any type of drone imaging service.",
     author: "Adam Houp, Shockwave Solar"
   },
   {
-    quote: "When solar financiers demand detailed site documentation, we call Desmond. His aerial analysis exceeded permit requirements and delivered faster than any other provider we've used. Reliable partner for time-sensitive projects.",
-    author: "Charlotte Hoverder, Facilities Manager, SP Plating"
+    quote: "I had hired Metro Drone Survey to assist on a solar project. Desmond was highly knowledgeable about the system we were looking to install, and knew exactly what pictures and measurements we were needing to get our permits. Metro Drone is the way to go if you have a project that needs an analysis. I will recommend them to anyone and will continue to use there services in the future.",
+    author: "Charlotte Hoverder, SP Plating"
   }
 ];
 
