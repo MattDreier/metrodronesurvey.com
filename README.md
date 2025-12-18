@@ -1,60 +1,103 @@
-# MetroDroneSurvey Website
+# MetroDroneSurvey
 
-🌐 Live: [mattdreier.github.io/metrodronesurvey.com](https://mattdreier.github.io/metrodronesurvey.com/)
+A production website for MetroDroneSurvey built with React, TypeScript, and Vite. Showcasing aerial photography services for real estate, solar installations, construction projects, and custom creative work in the Kansas City Metro area.
 
-## Overview
-A production website for MetroDroneSurvey built with React, TypeScript, and Vite, deployed on [GitHub Pages](https://mattdreier.github.io/metrodronesurvey.com/). Showcasing aerial photography services for real estate, solar installations, construction projects, and custom creative work in the Kansas City Metro area.
+🌐 **Live**: [mattdreier.github.io/metrodronesurvey.com](https://mattdreier.github.io/metrodronesurvey.com/)
 
-## Technology Stack
+## Tech Stack
+
 - React 19 + TypeScript
 - Vite 6
 - Tailwind CSS 4
-- Framer Motion for animations
-- Lucide React for icons
-- GitHub Pages for hosting
-- GitHub Actions for CI/CD
+- Framer Motion (animations)
+- Lucide React (icons)
+- GitHub Pages (hosting)
+- GitHub Actions (CI/CD)
 
 ## Performance Optimizations
-The project implements several optimization strategies:
 
-**Images**: "Converted to WebP format with automated optimization pipeline (25-75% size reduction)"
+- **Images**: Converted to WebP format with automated optimization pipeline (25-75% size reduction)
+- **Code Splitting**: Lazy loading and dynamic imports to reduce initial bundle size
+- **Fonts**: Async loading with `font-display: swap` to prevent render blocking
+- **Build**: Minification, tree shaking, and optimized chunk splitting via Vite
 
-**Code Splitting**: Lazy loading and dynamic imports reduce the initial bundle size
-
-**Fonts**: Async loading with `font-display: swap` prevents render-blocking behavior
-
-**Build Process**: Vite handles minification, tree shaking, and optimized chunk splitting
-
-**Lighthouse Targets**:
+**Lighthouse targets:**
 - Performance: 90+
 - Accessibility: 95+ (WCAG AA)
 - SEO: 95+
 - Best Practices: 90+
 
-## Getting Started
+## Local Development
 
-**Installation and Development**:
-```
+```bash
+# Install dependencies
 npm install
-npm run dev      # http://localhost:3000
+
+# Start dev server (http://localhost:3000)
+npm run dev
+
+# Build for production
 npm run build
+
+# Preview production build
 npm run preview
 ```
 
-**Additional Scripts**:
-- `npm run optimize-images` — Convert images to WebP
-- `npm run generate-icons` — Create favicon variations
+### Available Scripts
+
+- `npm run optimize-images` - Convert and optimize images to WebP
+- `npm run generate-icons` - Generate favicon variations from logo
 
 ## Project Structure
-Components directory contains modular React elements (Header, Hero, Features, Services, Testimonials, CallToAction, Footer). Public assets include optimized images and CNAME configuration. Scripts folder holds automation tools for image optimization and icon generation.
+
+```
+├── components/          # React components
+│   ├── Header.tsx
+│   ├── Hero.tsx
+│   ├── Features.tsx
+│   ├── Services.tsx
+│   ├── Testimonials.tsx
+│   ├── CallToAction.tsx
+│   └── Footer.tsx
+├── public/
+│   ├── assets/         # Optimized images
+│   └── CNAME          # Custom domain config
+├── scripts/
+│   ├── optimize-images.js
+│   └── generate-icons.js
+├── App.tsx
+├── index.tsx
+└── vite.config.ts
+```
 
 ## Deployment
-Automatic deployment to GitHub Pages occurs on push to the main branch via GitHub Actions. The custom domain uses A records (185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153) with HTTPS enforced through Let's Encrypt.
+
+Automatically deploys to GitHub Pages on push to `main` via GitHub Actions.
+
+### Custom Domain Setup
+
+**DNS Configuration:**
+
+A Records for apex domain:
+```
+185.199.108.153
+185.199.109.153
+185.199.110.153
+185.199.111.153
+```
+
+**GitHub Pages:**
+- Custom domain: `metrodronesurvey.com` (pending)
+- HTTPS enforced (Let's Encrypt)
+- Build source: GitHub Actions
 
 ## Browser Support
+
 - Chrome/Edge (last 2 versions)
 - Firefox (last 2 versions)
 - Safari (last 2 versions)
-- Mobile browsers (iOS Safari, Chrome Mobile)
+- Mobile browsers (iOS Safari, Chrome Android)
 
-**License**: © 2024 MetroDroneSurvey. All rights reserved.
+## License
+
+© 2024 MetroDroneSurvey. All rights reserved.
