@@ -6,8 +6,8 @@ A production website for MetroDroneSurvey built with React, TypeScript, and Vite
 
 ## Tech Stack
 
-- React 19 + TypeScript
-- Vite 6
+- React 19.2 + TypeScript
+- Vite 6.2
 - Tailwind CSS 4
 - Framer Motion (animations)
 - Lucide React (icons)
