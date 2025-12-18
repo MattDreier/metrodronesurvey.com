@@ -10,10 +10,14 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="font-display font-medium text-text-primary-light dark:text-text-primary-dark mb-4 text-base">Services</h3>
             <ul className="space-y-3 text-sm text-text-secondary-light dark:text-text-secondary-dark">
-              <li><a href="#services" className="hover:text-brand-teal transition-colors">Aerial Photography & Video</a></li>
+              <li><a href="#services" className="hover:text-brand-teal transition-colors">Aerial Photography</a></li>
+              <li><a href="#services" className="hover:text-brand-teal transition-colors">Aerial Video</a></li>
               <li><a href="#services" className="hover:text-brand-teal transition-colors">3D Modeling</a></li>
-              <li><a href="#services" className="hover:text-brand-teal transition-colors">Solar Site Analysis</a></li>
               <li><a href="#services" className="hover:text-brand-teal transition-colors">Property Documentation</a></li>
+              <li><a href="#services" className="hover:text-brand-teal transition-colors">Solar Site Analysis</a></li>
+              <li><a href="#services" className="hover:text-brand-teal transition-colors">Solar Documentation</a></li>
+              <li><a href="#services" className="hover:text-brand-teal transition-colors">Sports</a></li>
+              <li><a href="#services" className="hover:text-brand-teal transition-colors">Artistic/Conceptual</a></li>
             </ul>
           </div>
 
