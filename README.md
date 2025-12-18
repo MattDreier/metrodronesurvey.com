@@ -86,8 +86,13 @@ A Records for apex domain:
 185.199.111.153
 ```
 
+CNAME for www subdomain:
+```
+www → mattdreier.github.io
+```
+
 **GitHub Pages:**
-- Custom domain: `metrodronesurvey.com` (pending)
+- Custom domain: `metrodronesurvey.com`
 - HTTPS enforced (Let's Encrypt)
 - Build source: GitHub Actions
 
