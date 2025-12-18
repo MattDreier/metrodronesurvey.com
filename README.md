@@ -1,7 +1,7 @@
 # MetroDroneSurvey Website
 
 ## Overview
-A professional drone photography website for MetroDroneSurvey built with React, TypeScript, and Vite, deployed on GitHub Pages with a custom domain at [metrodronesurvey.com](https://metrodronesurvey.com). Showcasing aerial photography services for real estate, solar installations, construction projects, and custom creative work in the Kansas City Metro area.
+A professional drone photography website for MetroDroneSurvey built with React, TypeScript, and Vite, deployed on [GitHub Pages](https://mattdreier.github.io/metrodronesurvey.com/). Showcasing aerial photography services for real estate, solar installations, construction projects, and custom creative work in the Kansas City Metro area.
 
 ## Technology Stack
 - React 19.2.3 + TypeScript (strict mode)
